@@ -1,0 +1,10 @@
+.venv
+node_modules
+__pycache__
+.env
+*.json
+!package.json
+!package-lock.json
+mern-blog-*.json
+*firebase-adminsdk*.json
+static/

@@ -1,0 +1,114 @@
+
+
+.list-item {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  transition: background 0.3s;
+}
+
+.list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.drawer {
+  width: 280px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #1a1a2e, #16213e);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-bar {
+  background: linear-gradient(90deg, #16213e, #0f3460);
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header .avatar {
+  background-color: white;
+  color: #16213e;
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  margin-top: 70px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.widget-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.widget {
+  background: linear-gradient(145deg, #1e1e2e, #252547);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  transition: all 0.3s;
+}
+
+.widget:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+.widget-header {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #f4f4f4;
+}
+
+.widget-body {
+  font-size: 15px;
+  color: #d1d1d1;
+}

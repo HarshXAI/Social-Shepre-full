@@ -1,0 +1,25 @@
+# Environment variables
+.env
+*.env
+!.env.example
+
+# Firebase credentials
+*firebase-adminsdk*.json
+mern-blog-*.json
+
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+
+# OS files
+.DS_Store
+*.log
+
+# Build outputs
+dist/
+build/
+*.pyc
+
+# Static files (generated images)
+backend/static/

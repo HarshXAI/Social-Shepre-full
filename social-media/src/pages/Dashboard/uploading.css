@@ -1,0 +1,500 @@
+.unified-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .unified-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1d2129;
+    text-align: center;
+  }
+  
+  /* View Toggle */
+  .view-toggle {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e4e6eb;
+  }
+  
+  .view-button, .active-view-button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-button {
+    border-bottom: 3px solid transparent;
+    color: #65676B;
+  }
+  
+  .active-view-button {
+    border-bottom: 3px solid #1877F2;
+    color: #1877F2;
+    font-weight: bold;
+  }
+  
+  /* Platform Selector */
+  .platform-selector {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .platform-selector label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .platform-dropdown {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #e4e6eb;
+    font-size: 16px;
+    background-color: #f0f2f5;
+    cursor: pointer;
+  }
+  
+  /* Facebook Form */
+  .post-input-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e4e6eb;
+    resize: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  .url-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #e4e6eb;
+  }
+  
+  .char-counter {
+    text-align: right;
+    font-size: 12px;
+    color: #606770;
+    margin-bottom: 15px;
+  }
+  
+  /* Instagram Form */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input, .textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e4e6eb;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .image-preview {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .image-preview h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #1d2129;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    border: 1px solid #e4e6eb;
+  }
+  
+  /* Scheduling Options */
+  .scheduling-options {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+  }
+  
+  .schedule-checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .schedule-checkbox {
+    margin-right: 5px;
+  }
+  
+  .date-time-inputs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .date-input, .time-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #e4e6eb;
+  }
+  
+  /* Post Button */
+  .post-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .post-button.facebook {
+    background-color: #1877F2;
+  }
+  
+  .post-button.facebook:hover {
+    background-color: #166fe5;
+  }
+  
+  .post-button.instagram {
+    background-color: #C13584;
+  }
+  
+  .post-button.instagram:hover {
+    background-color: #b13076;
+  }
+  
+  .post-button:disabled {
+    background-color: #e4e6eb;
+    color: #bec3c9;
+    cursor: not-allowed;
+  }
+  
+  /* Messages */
+  .error-message {
+    color: #ff3b30;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff0f0;
+    border-radius: 5px;
+  }
+  
+  .success-message {
+    color: #34c759;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0fff5;
+    border-radius: 5px;
+  }
+  
+  /* Scheduled Posts Section */
+  .scheduled-posts-section {
+    margin-top: 25px;
+    border-top: 1px solid #e4e6eb;
+    padding-top: 15px;
+  }
+  
+  .scheduled-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+  .scheduled-posts-title {
+    margin: 0;
+    font-size: 16px;
+    color: #1d2129;
+  }
+  
+  .scheduled-posts-list {
+    margin-top: 15px;
+  }
+  
+  .platform-scheduled-posts {
+    margin-bottom: 20px;
+  }
+  
+  .platform-posts-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #65676B;
+    border-bottom: 1px solid #e4e6eb;
+    padding-bottom: 5px;
+  }
+  
+  .scheduled-post {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .facebook-post {
+    background-color: rgba(24, 119, 242, 0.05);
+    border-left: 3px solid #1877F2;
+  }
+  
+  .instagram-post {
+    background-color: rgba(193, 53, 132, 0.05);
+    border-left: 3px solid #C13584;
+  }
+  
+  .scheduled-post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .scheduled-time {
+    font-size: 12px;
+    color: #606770;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    color: #1877F2;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .post-content {
+    margin: 5px 0;
+    word-break: break-word;
+  }
+  
+  .post-image-info {
+    font-size: 12px;
+    color: #606770;
+    margin-top: 5px;
+  }
+  
+  .scheduled-image-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .scheduled-image {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 4px;
+  }
+  
+  /* Calendar Styles */
+  .calendar-container {
+    width: 100%;
+  }
+  
+  .calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .calendar-nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #1877F2;
+  }
+  
+  .calendar-month-header {
+    margin: 0;
+    font-size: 18px;
+    color: #1d2129;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #e4e6eb;
+    border: 1px solid #e4e6eb;
+  }
+  
+  .weekday-header {
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f5f6f7;
+    color: #65676B;
+    font-size: 12px;
+  }
+  
+  .calendar-day {
+    min-height: 90px;
+    background-color: white;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .empty-day {
+    background-color: #f5f6f7;
+  }
+  
+  .current-day {
+    background-color: #f0f8ff;
+  }
+  
+  .day-number {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: #65676B;
+  }
+  
+  .current-day-number {
+    background-color: #1877F2;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .post-indicator-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .post-indicator {
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+  
+  .facebook-indicator {
+    background-color: rgba(24, 119, 242, 0.1);
+    color: #1877F2;
+  }
+  
+  .instagram-indicator {
+    background-color: rgba(193, 53, 132, 0.1);
+    color: #C13584;
+  }
+  
+  .platform-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+  .fb-icon {
+    background-color: #1877F2;
+    color: white;
+  }
+  
+  .ig-icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+  }
+  
+  .post-time {
+    font-size: 10px;
+  }
+  
+  .more-posts-indicator {
+    font-size: 10px;
+    color: #65676B;
+    margin-top: 2px;
+    text-align: center;
+  }
+  
+  .calendar-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #65676B;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .unified-container {
+      padding: 15px;
+    }
+    
+    .date-time-inputs {
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    .calendar-day {
+      min-height: 70px;
+    }
+    
+    .post-indicator {
+      font-size: 8px;
+    }
+    
+    .platform-icon {
+      width: 12px;
+      height: 12px;
+      font-size: 8px;
+    }
+  }
+  

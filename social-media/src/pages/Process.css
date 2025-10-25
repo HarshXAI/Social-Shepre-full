@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+}
+
+.custom_heading1 {
+  color: #222;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.custom_heading1 span {
+  color: #007bff;
+}
+
+.plain-blue-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.cylinder-container {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cylinder {
+  width: 160px;
+  background: linear-gradient(180deg, #007bff, #0056b3);
+  border-radius: 0 0 80px 80px;
+  transform: translateY(-100%);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.cylinder.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cylinder-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.cylinder-content .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.cylinder-content .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cylinder-content .description {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .cylinder-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cylinder {
+    width: 140px;
+  }
+}

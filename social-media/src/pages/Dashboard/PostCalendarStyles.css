@@ -1,0 +1,140 @@
+.calendar-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-nav-button {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-nav-button:hover {
+  background-color: #334155;
+}
+
+.calendar-month-header {
+  font-size: 1.5rem;
+  color: #e2e8f0;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.weekday-header {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.calendar-day {
+  background-color: #1e293b;
+  border-radius: 6px;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+  color: #e2e8f0;
+}
+
+.calendar-day.empty-day {
+  background-color: transparent;
+}
+
+.day-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.current-day {
+  border: 2px solid #8b5cf6;
+}
+
+.current-day-number {
+  color: #8b5cf6;
+}
+
+.post-indicator-container {
+  margin-top: 0.5rem;
+}
+
+.post-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #334155;
+  color: #e2e8f0;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.facebook-post {
+  background-color: #1877f2;
+}
+
+.instagram-post {
+  background-color: #e1306c;
+}
+
+.platform-icon {
+  margin-right: 0.3rem;
+}
+
+.more-posts-indicator {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.calendar-legend {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+}
+
+.legend-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #1e293b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
